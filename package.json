@@ -5,6 +5,14 @@
   "icon": "icon.svg",
   "type": "module",
   "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxxxxxxx2/dsh-peak-valley-reminder.git"
+  },
+  "homepage": "https://github.com/xxxxxxxx2/dsh-peak-valley-reminder#readme",
+  "bugs": {
+    "url": "https://github.com/xxxxxxxx2/dsh-peak-valley-reminder/issues"
+  },
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",

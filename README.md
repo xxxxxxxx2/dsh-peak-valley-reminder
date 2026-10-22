@@ -2,6 +2,7 @@
 
 [![dsh](https://img.shields.io/badge/dsh-plugin-0.2.1--rc.2-4f6bed)](https://www.npmjs.com/package/@deepseek-ai/dsh)
 [![license](https://img.shields.io/badge/license-MIT-2fbf71)](LICENSE)
+[![repo](https://img.shields.io/badge/github-xxxxxxxx2%2Fdsh--peak--valley--reminder-2fbf71)](https://github.com/xxxxxxxx2/dsh-peak-valley-reminder)
 
 DeepSeek Harness（DSH）插件：在会话标题栏**「模式」标签之后**常驻一枚「**峰谷**」提醒，
 告诉你现在处在**高峰时段**还是**空闲时段**，并倒计时下一次切换。
@@ -117,7 +118,8 @@ npm test
 npm publish            # 或 pnpm publish
 ```
 
-发布前建议补上 `repository` / `homepage` / `bugs` 字段，并把 README 顶部的徽章换成正式仓库地址。
+仓库：<https://github.com/xxxxxxxx2/dsh-peak-valley-reminder>　`repository` / `homepage` / `bugs`
+已指向该仓库；发布后 DSH 插件市场按 `dsh-plugin` 关键词即可搜到。
 
 ## License
 
