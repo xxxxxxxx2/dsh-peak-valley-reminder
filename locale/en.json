@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Peaks",
+    "description": "Shows whether the current Beijing-time slot is peak or idle (peak: Mon–Fri 09:00–12:00 and 14:00–18:00, excluding Chinese statutory holidays; everything else is idle) right after the mode chip in the conversation header, with a countdown to the next switch."
+  }
+}

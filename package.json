@@ -1,0 +1,67 @@
+{
+  "name": "dsh-peak-valley-reminder",
+  "version": "0.2.0",
+  "description": "DeepSeek Harness 峰谷提醒：在会话标题栏「模式」之后显示当前是高峰还是空闲时段（北京时间，工作日 09:00–12:00、14:00–18:00 为高峰，周末与法定节假日全天空闲），并倒计时下一次切换。",
+  "icon": "icon.svg",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./icon.svg": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "docs",
+    "test",
+    "cordis.patch.yml",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.0-rc.2": "compatible",
+        "0.2.1-rc.2": "compatible"
+      }
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "scripts": {
+    "test": "node test/window-model.test.cjs",
+    "prepublishOnly": "node test/window-model.test.cjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "peak",
+    "off-peak",
+    "peak-hours",
+    "china-holidays",
+    "reminder"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

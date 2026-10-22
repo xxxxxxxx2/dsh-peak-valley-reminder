@@ -1,0 +1,7 @@
+# 本包作为 profile 补丁层的一条 loader 条目挂载。
+# 手动安装（不使用 dsh plugin 命令）时，把下面这条 insert 复制进
+# <profile>/cordis.patch.yml 即可，loader 会热加载。
+- insert:
+    - id: peak-valley-reminder
+      name: 'dsh-peak-valley-reminder'
+      config: {}
